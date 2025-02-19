@@ -39,7 +39,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
-          tags: niwkleber/node-jq-buildah-sonar-scanner:latest , niwkleber/node-jq-buildah-sonar-scanner:${{ env.TAG_NAME }}
+          tags: niwkleber/node-jq:latest , niwkleber/node-jq:${{ env.TAG_NAME }}
           push: true
 
       - name: Image digest
